@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit.UIGestureRecognizerSubclass
 import RxSwift
 import RxCocoa
@@ -91,3 +92,4 @@ extension ObservableType where Element: ForceTouchGestureRecognizer {
         return self.map { $0.force }
     }
 }
+#endif
